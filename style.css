@@ -1,0 +1,85 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #333;
+	line-height: 1.5;
+	font-size: 16px;
+	color: #fff;
+	font-family: arial;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+.topnav{
+	list-style-type: none;
+	width: 100%;
+	margin: 0px; 
+	padding: 0px;
+	background-color: #202020;
+	overflow: hidden;
+}
+.topnav >li{
+	float: right;
+}
+#topnav-link{
+	padding: 15px;
+	display: inline-block;
+}
+.topnav #logo{
+	float: left;
+	font-size: 20px;
+	text-align: center;
+	padding: 15px;
+	font-family: arial black;
+}
+.main-content{
+	/*border: 1px solid #000;*/
+	width: 80%;
+	float: right;
+	transform: translate(-50%, 50px);
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#buy{
+	background-color: #202020;
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 10px;
+	text-align: center;
+	width: 40%;
+	float: right;
+	margin: 0px 0px 0px 20px;
+	cursor: pointer;
+}
+#sell{
+	background-color: #202020;
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 10px;
+	text-align: center;
+	width: 40%;
+	float: left; 
+	cursor: pointer;
+}
+#update{
+	font-size: 14px;
+	font-style: bold;
+	clear: both;
+	text-align: center;
+
+}
+
+@media screen and (max-width: 460px){
+	#buy, #sell{
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 300px){
+	#buy, #sell{
+		font-size: 10px;
+	}
+}
